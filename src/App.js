@@ -43,7 +43,7 @@ const handleEdit=(id)=>{
       <h1>Todo List App</h1>
       
         <form className="todoForm" onSubmit={handleSubmit} >
-        <input type="text" 
+        <input required type="text" 
          value={todo}
          onChange={ (e)=>setTodo(e.target.value)} />
         <button type="submit">{editId ? "Edit" :"Go"}</button>
